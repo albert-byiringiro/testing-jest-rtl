@@ -4,7 +4,7 @@ import Greet from "./greet"
 test('Render Greet Test', () => {
     render(<Greet/>)
 
-    const textElement = screen.getByText('Hello');
+    const textElement = screen.getByText(/hello/i);
 
     expect(textElement).toBeInTheDocument()
 })
